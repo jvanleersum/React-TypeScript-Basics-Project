@@ -10,15 +10,14 @@ let isInstructor: boolean;
 
 let hobbies: string[];
 
-let person: {
+type Person = {
   name: string,
   age: number
 };
 
-let people: {
-  name: string,
-  age: number
-}[];
+let person: Person;
+
+let people: Person[];
 
 // Type inference
 let course = 'React course';
@@ -26,3 +25,14 @@ let course = 'React course';
 // Union
 let myCourse: string | number = 'React course';
 myCourse = 12345; 
+
+// functions and parameters
+function add(a: number, b:number) {
+  return a + b
+}    // returns a number => type inference
+
+function printOutput(value: any) {
+  console.log(value);
+}   // returns nothing, type of the function is void
+
+
