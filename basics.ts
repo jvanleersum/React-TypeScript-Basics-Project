@@ -19,3 +19,10 @@ let people: {
   name: string,
   age: number
 }[];
+
+// Type inference
+let course = 'React course';
+
+// Union
+let myCourse: string | number = 'React course';
+myCourse = 12345; 
