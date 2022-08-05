@@ -36,3 +36,8 @@ function printOutput(value: any) {
 }   // returns nothing, type of the function is void
 
 
+// generics
+function insertAtBeginning<T>(array: T[], value: T){
+  const newArray = [value, ...array]
+  return newArray;
+}
